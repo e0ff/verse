@@ -597,11 +597,10 @@ test json {
     alloc.free(items);
 }
 
-pub const ContentType = @import("content-type.zig");
-
 const std = @import("std");
 const ArrayListUnmanaged = std.ArrayListUnmanaged;
 const Type = @import("builtin").Type;
+const ContentType = @import("content-type.zig");
 const Allocator = std.mem.Allocator;
 const eql = std.mem.eql;
 const splitScalar = std.mem.splitScalar;
